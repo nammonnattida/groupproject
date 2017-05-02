@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">SOME NAME</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">?</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="0.jpg" style="width:100%" onclick="onClick(this)" alt="ตลาดน้ำพุทธรักษา">
+      <a href="0.html" class="w3-bar-item w3-black w3-button">ตลาดท่าน้ำพุทธรักษา</a>
+      <img src="2.jpg" style="width:100%" onclick="onClick(this)" alt="เรือประมง">
+      <a href="2.html" class="w3-bar-item w3-black w3-button">เรือประมง</a>
+      <img src="3.jpg" style="width:100%" onclick="onClick(this)" alt="เด็กนักเรียน">
+      <a href="3.html" class="w3-bar-item w3-black w3-button">เด็กนักเรียน</a>
+      <img src="16.jpg" style="width:100%" onclick="onClick(this)" alt="ร้านหมี่ผัด">
+      <a href="16.html" class="w3-bar-item w3-black w3-button">ร้านหมี่ผัด</a>
+   </div>
+
+   <div class="w3-quarter">
+      <img src="4.jpg" style="width:100%" onclick="onClick(this)" alt="เด็ก 3 เชื้อชาติ">
+      <a href="4.html" class="w3-bar-item w3-black w3-button">เด็ก 3 เชื้อชาติ</a>
+      <img src="5.jpg" style="width:100%" onclick="onClick(this)" alt="ข้าวยำน้ำบูดู">
+      <a href="5.html" class="w3-bar-item w3-black w3-button">ข้าวยำน้ำบูดู</a>
+      <img src="6.jpg" style="width:100%" onclick="onClick(this)" alt="วิถีการทำประมง">
+      <a href="5.html" class="w3-bar-item w3-black w3-button">วิถีการทำประมง</a>
+      <img src="9.jpg" style="width:100%" onclick="onClick(this)" alt="ร้านน้ำชา">
+      <a href="9.html" class="w3-bar-item w3-black w3-button">ร้านน้ำชา</a>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="7.jpg" style="width:100%" onclick="onClick(this)" alt="นางงิ้ว">
+      <a href="7.html" class="w3-bar-item w3-black w3-button">นางงิ้ว</a>
+      <img src="8.jpg" style="width:100%" onclick="onClick(this)" alt="ผู้หญิงกับโอ่ง">
+      <a href="8.html" class="w3-bar-item w3-black w3-button">ผู้หญิงกับโอ่ง</a>
+      <img src="15.jpg" style="width:100%" onclick="onClick(this)" alt="โฟล์คซอง">
+      <a href="1415.html" class="w3-bar-item w3-black w3-button">โฟล์คซอง</a>
+      <img src="14.jpg" style="width:100%" onclick="onClick(this)" alt="ตัวหนังตะลุง">
+      <a href="1415.html" class="w3-bar-item w3-black w3-button">ตัวหนังตะลุง</a>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="10.jpg" style="width:100%" onclick="onClick(this)" alt="เรือรบ">
+      <a href="10.html" class="w3-bar-item w3-black w3-button">เรือรบ</a>
+      <img src="11.jpg" style="width:100%" onclick="onClick(this)" alt="ปลา">
+      <a href="11.html" class="w3-bar-item w3-black w3-button">ปลา</a>
+      <img src="12.jpg" style="width:100%" onclick="onClick(this)" alt="ลุงขี่สามล้อ">
+      <a href="1213.html" class="w3-bar-item w3-black w3-button">ลุงขี่สามล้อ</a>
+      <img src="13.jpg" style="width:100%" onclick="onClick(this)" alt="หมา">
+      <a href="1213.html" class="w3-bar-item w3-black w3-button">หมา</a>
+    </div>
+
+  </div>
+
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">�</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="/w3images/avatar_hat.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>My Name</h4>
+      <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p>mail: example@example.com</p>
+      <p>tel: 5353 35531</p>
+      <hr class="w3-opacity">
+
+      </div>
+
+      <hr class="w3-opacity">
+
+
+
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <!-- Add Google Maps -->
+  <script>
+  function myMap()
+  {
+    myCenter=new google.maps.LatLng(41.878114, -87.629798);
+    var mapOptions= {
+      center:myCenter,
+      zoom:12, scrollwheel: false, draggable: false,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: myCenter,
+    });
+    marker.setMap(map);
+  }
+
+  // Tabbed Menu
+  function openMenu(evt, menuName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " w3-red";
+  }
+  document.getElementById("myLink").click();
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+  <!--
+  To use this code on your website, get a free API key from Google.
+  Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+  -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+<body>
+
+<!-- Contact (with google maps) -->
+<div id="googleMap" class="w3-grayscale-max" style="width:100%;height:400px;"></div>
+
+
+</div>
+
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(7.196088, 100.590353);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+
+
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
